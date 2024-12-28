@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer & To-Do List</title>
+    <link rel="stylesheet" href="des.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timer & To-Do List</h1>
+        <div class="flex-container">
+            <div class="timer-section">
+                <h2>Timer</h2>
+                <div class="timer">
+                    <p id="time-display">00:10:00</p>
+                    <button id="start-stop-btn">Mulai</button>
+                    <button id="reset-btn">Reset</button>
+                </div>
+                <div class="timer-settings">
+                    <label for="study-hour">Jam Belajar:</label>
+                    <input type="number" id="study-hour" value="0" min="0" max="23">
+                    <input type="number" id="study-time" value="10" min="0" max="59">
+                    <label for="break-time">Menit Istirahat:</label>
+                    <input type="number" id="break-time" value="5" min="1" max="59">
+                </div>
+
+                <!-- Spotify Section -->
+                <div class="spotify-section">
+                    <br>
+                    <h2>Spotify</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2r43XGHHyntf23fG04tpKp?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="todo-list-section">
+                <h2>Daftar Tugas</h2>
+                <div class="todo-input">
+                    <input type="text" id="new-task" placeholder="Tulis tugas baru...">
+                    <input type="date" id="deadline-date" placeholder="Pilih tanggal deadline">
+                    <button id="add-task-btn">Tambah Tugas</button>
+                </div>
+                <ul id="task-list"></ul>
+            </div>
+        </div>
+    </div>    
+
+    <script src="back.js"></script>
+</body>
+</html>
